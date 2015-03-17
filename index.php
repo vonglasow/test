@@ -46,7 +46,7 @@ class Foo
     public function canDoSomethings()
     {
         $a = "Hello" . 'world';
-        $a = "$a" . '$b';
+        $a = $a . '$b';
 
         return true;
     }
