@@ -6,7 +6,7 @@
  * @category Test
  * @package  Foo
  */
-class foo
+class Foo
 {
     /**
      * Check if ok
@@ -36,5 +36,36 @@ class foo
     public function doesThings()
     {
         return true;
+    }
+
+    /**
+     * Check if does things
+     *
+     * @return boolean true
+     */
+    public function canDoSomethings()
+    {
+        return true;
+    }
+
+    public function testifConditions()
+    {
+        $a = 0;
+        $b = 0;
+
+        if ($a == $b) {
+            doSomething();
+        } else {
+            doSomething();
+        }
+
+        if ($a == $b)
+        {
+            foo();
+        }
+        else
+        {
+            bar();
+        }
     }
 }
