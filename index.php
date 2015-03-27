@@ -48,6 +48,10 @@ class Foo
         $a = "Hello" . 'world';
         $a = $a . '$b';
 
+        $msg = "Hello "
+            . "${name}"
+            . "!";
+
         return true;
     }
 
