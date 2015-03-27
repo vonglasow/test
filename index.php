@@ -75,4 +75,16 @@ class Foo
             bar();
         }
     }
+
+    /**
+     * Always return true
+     *
+     * @return boolean true
+     */
+    public function delete()
+    {
+        //delete something
+
+        return true;
+    }
 }
