@@ -1,4 +1,4 @@
-/**
+/*
  * NOTICE OF LICENSE
  *
  * This source file is licensed exclusively to Inovia Team.
