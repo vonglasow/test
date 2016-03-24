@@ -1,0 +1,13 @@
+<phpunit verbose="true">
+    <logging>
+        <log type="testdox-text" target="tmp/tests/testdox.txt"/>
+        <log type="coverage-clover" target="tmp/phpunit.coverage.xml"/>
+        <log type="junit" target="tmp/phpunit.xml"/>
+    </logging>
+    <testsuites>
+        <testsuite name="All">
+            <directory>phpunit/tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
+

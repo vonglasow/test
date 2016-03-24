@@ -1,0 +1,21 @@
+{
+    "name": "root/test",
+    "require-dev": {
+        "atoum/atoum": "^2.6",
+        "phpunit/phpunit": "^5.2",
+        "atoum/reports-extension": "^1.0",
+        "atoum/autoloop-extension": "^0.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "At\\": "atoum/src/",
+            "Pu\\": "phpunit/src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alexis von Glasow",
+            "email": "alexis.von-glasow@inovia-team.com"
+        }
+    ]
+}
