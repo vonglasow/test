@@ -1,0 +1,37 @@
+language: php
+php:
+  - 5.3
+  - 5.4
+  - 5.5
+  - 5.6
+  - 7.0
+  - hhvm
+  - hhvm-nightly
+matrix:
+  allow_failures:
+    - php: hhvm
+    - php: hhvm-nightly
+notifications:
+  irc: "irc.freenode.org##atoum"
+env:
+    global:
+        - secure: "vJ1TnFhU9muqLwkiBd13lFqdPJIrwKJ5OJjR3/jQROWQsRO4NPd/I7OfdDKk\noJGYbgjGMw7bmBYI0xjhYfZAnrClwIBvn1Qx5x5UDGxTHC8ZP6xs49AGa37I\n7BJlWC7+nRwPmmLhoLsbut/O7Kkn8IkdJIeChHbdn8RHQIJTJ4Y="
+sudo: false
+before_script:
+  - "cp resources/configurations/travis/.atoum.php.dist .atoum.php"
+  - "[ -n \"$COVERALLS_REPO_TOKEN\" ] && sed -i s?/path/to/sources/directory?classes? .atoum.php || true"
+  - "[ -n \"$COVERALLS_REPO_TOKEN\" ] && sed -i s/YouCoverallsProjectToken/$COVERALLS_REPO_TOKEN/ .atoum.php || true"
+script:
+  - bin/atoum +verbose
+before_deploy:
+  - mkdir phar
+  - php -n -dphar.readonly=Off scripts/phar/generator.php -d ./phar
+  - php -n -ddate.timezone=Europe/Paris ./phar/atoum.phar --test-it -ncc +verbose
+deploy:
+  provider: releases
+  api_key:
+    secure: lmt12noTXqP/X7a71FffP/lIJR+9sX6vrE7gIdTHroMqfxh2x3u8w1NBs3+npa9lq00Fi2UZiWJY7BurdsTokM75ZqXZAjlC42KCZGLiXKMQZcei5nOdKhKWZ06FSVMFlxf6dhknsMgJjeNmDGVSXhDnN2ZuPnf68may/o/nLaA=
+  file: phar/atoum.phar
+  skip_cleanup: true
+  on:
+    tags: true

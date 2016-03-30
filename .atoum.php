@@ -15,7 +15,7 @@ use \mageekguy\atoum;
 $report = $script->addDefaultReport();
 $runner->setBootstrapFile(__DIR__ . '/.bootstrap.atoum.php');
 
-$xunit = new \mageekguy\atoum\reports\asynchronous\sonar\xunit();
+$xunit = new \mageekguy\atoum\reports\sonar\xunit();
 $writer = new \mageekguy\atoum\writers\file('./tmp/sonar-xunit.xml');
 $xunit->addWriter($writer);
 $runner->addReport($xunit);

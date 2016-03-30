@@ -2,7 +2,7 @@
 
 namespace Pu;
 
-class MoneyTest extends \PHPUnit_Framework_TestCase
+class HeadTest extends \PHPUnit_Framework_TestCase
 {
     public function testFoo()
     {
