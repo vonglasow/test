@@ -137,7 +137,7 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vonglasow/reports-extension.git",
-                "reference": "7ea4b78ad239f840889817c08c6ae7351a63011f"
+                "reference": "2e5879726868815187beb184b58b097f1a0d8c17"
             },
             "require": {
                 "symfony/filesystem": "~2.6",
@@ -173,7 +173,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2016-03-25 11:16:08"
+            "time": "2016-03-30 12:56:50"
         },
         {
             "name": "doctrine/instantiator",
