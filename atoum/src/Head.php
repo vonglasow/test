@@ -13,4 +13,14 @@ class Head
     {
         return 'bar';
     }
+
+    public function toto()
+    {
+        return;
+    }
+
+    public function titi()
+    {
+        return null;
+    }
 }
