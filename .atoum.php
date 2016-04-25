@@ -18,11 +18,13 @@ $runner->setBootstrapFile(__DIR__ . '/.bootstrap.atoum.php');
 $xunit = new \mageekguy\atoum\reports\sonar\xunit();
 $writer = new \mageekguy\atoum\writers\file('./tmp/sonar-xunit.xml');
 $xunit->addWriter($writer);
-$runner->addReport($xunit);
 
 $junit = new \mageekguy\atoum\reports\asynchronous\xunit();
 $junitWriter = new \mageekguy\atoum\writers\file('./tmp/junit.xml');
 $junit->addWriter($junitWriter);
+
+$runner->addReport($xunit);
+$runner->addReport($junit);
 
 /*
 LOGO
