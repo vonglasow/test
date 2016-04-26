@@ -12,6 +12,11 @@ More information on documentation:
 
 use \mageekguy\atoum;
 
+$junitFolder = './tmp/atoum';
+if (!is_dir($junitFolder)) {
+    mkdir($junitFolder, 0777, true);
+}
+
 $report = $script->addDefaultReport();
 $runner->setBootstrapFile(__DIR__ . '/.bootstrap.atoum.php');
 
@@ -20,7 +25,7 @@ $writer = new \mageekguy\atoum\writers\file('./tmp/sonar-xunit.xml');
 $xunit->addWriter($writer);
 
 $junit = new \mageekguy\atoum\reports\asynchronous\xunit();
-$junitWriter = new \mageekguy\atoum\writers\file('./tmp/junit.xml');
+$junitWriter = new \mageekguy\atoum\writers\file('./tmp/atoum/junit.xml');
 $junit->addWriter($junitWriter);
 
 $runner->addReport($xunit);
