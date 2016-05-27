@@ -1,15 +1,9 @@
 {
     "name": "root/test",
-    "repositories": [
-        {
-            "type": "git",
-            "url": "https://github.com/vonglasow/reports-extension.git"
-        }
-    ],
     "require-dev": {
         "atoum/atoum": "^2.6",
         "phpunit/phpunit": "^5.2",
-        "atoum/reports-extension": "dev-sonar",
+        "atoum/reports-extension": "^2.0",
         "atoum/autoloop-extension": "^0.0.2"
     },
     "autoload": {

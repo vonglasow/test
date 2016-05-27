@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a978c2c74afb37446d8a8ed65e3bbb80",
-    "content-hash": "5c5d036d681c647fad4d6659f5c54a9e",
+    "hash": "f2cd7ee2dd594e1395c3d89c3bf35644",
+    "content-hash": "e2316d77a8cc9efe11c6d5403a82b018",
     "packages": [],
     "packages-dev": [
         {
@@ -133,20 +133,32 @@
         },
         {
             "name": "atoum/reports-extension",
-            "version": "dev-sonar",
+            "version": "2.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/vonglasow/reports-extension.git",
-                "reference": "2e5879726868815187beb184b58b097f1a0d8c17"
+                "url": "https://github.com/atoum/reports-extension.git",
+                "reference": "3668e04d90d91d2353a86d86a32fbb500885c6b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/atoum/reports-extension/zipball/3668e04d90d91d2353a86d86a32fbb500885c6b5",
+                "reference": "3668e04d90d91d2353a86d86a32fbb500885c6b5",
+                "shasum": ""
             },
             "require": {
-                "symfony/filesystem": "~2.6",
-                "twig/twig": "~1.18"
+                "php": ">=5.4.0",
+                "symfony/filesystem": "^2.6 | ^3.0",
+                "twig/twig": "^1.18"
             },
             "require-dev": {
-                "atoum/atoum": "~2.1"
+                "atoum/atoum": "^2.5.1"
             },
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "mageekguy\\atoum\\reports\\": "classes"
@@ -155,6 +167,7 @@
                     "autoloader.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "BSD"
             ],
@@ -173,7 +186,7 @@
                 "test",
                 "unit testing"
             ],
-            "time": "2016-03-30 12:56:50"
+            "time": "2016-05-24 12:44:54"
         },
         {
             "name": "doctrine/instantiator",
@@ -1553,9 +1566,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "atoum/reports-extension": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
