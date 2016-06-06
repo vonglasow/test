@@ -3,3 +3,4 @@
 * Test ![state](http://central.hoa-project.net/State/Test)
 * Ruler ![state](http://central.hoa-project.net/State/Ruler)
 * Dispatcher ![state](http://central.hoa-project.net/State/Dispatcher)
+* Http ![state](http://central.hoa-project.net/State/Http)
