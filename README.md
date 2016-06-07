@@ -30,7 +30,7 @@ Describe a quick usage in this section
 
 ## Awecode
 
-The following awecodes show this library in action: 
+The following awecodes show this library in action:
 
 Add here the list of awecode about this library (see example below)
 ```md
@@ -39,16 +39,28 @@ Add here the list of awecode about this library (see example below)
     simple example will illustrate the WebSocket protocol*.
 ```
 
-## Tests
+## Test
 
-Please, read this
+You can run tests with:
+
+```sh
+$ composer install
+$ vendor/bin/hoa test:run
+```
+
+Or you can read this
 [chapter](http://hoa-project.net/En/Literature/Contributor/Guide.html#Testing_a_patch)
-of contributor guide if you want running tests
+of contributor guide.
 
 ## Documentation
 
-Different documentations can be found on the website:
+Various documentations can be found on the website:
 [http://hoa-project.net/](http://hoa-project.net/).
+
+## Bug Reporting
+
+You can use issues on GitHub, to submit new problem reports or search for
+existing ones.
 
 ## License
 
