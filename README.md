@@ -13,12 +13,8 @@ With [Composer](http://getcomposer.org/), to include this library into your
 dependencies, you need to require
 [`hoa/\#LIBRARYNAME\#`](https://packagist.org/packages/hoa/\#LIBRARYNAME\#):
 
-```json
-{
-    "require": {
-        "hoa/\#LIBRARYNAME\#": "\#LIBRARYVERSION\#"
-    }
-}
+```
+composer require "hoa/\#LIBRARYNAME\#"
 ```
 
 Please, read the website to [get more informations about how to
@@ -55,12 +51,11 @@ of contributor guide.
 ## Documentation
 
 Various documentations can be found on the website:
-[http://hoa-project.net/](http://hoa-project.net/).
+[http://hoa-project.net/Literature/Hack/#LIBRARYNAME#](http://hoa-project.net/Literature/Hack/#LIBRARYNAME#).
 
 ## Bug Reporting
 
-You can use issues on GitHub, to submit new problem reports or search for
-existing ones.
+You can use issues on [GitHub](https://github.com/hoaproject/#LIBRARYNAME#/issues), to submit new problem reports or search for existing ones.
 
 ## License
 
