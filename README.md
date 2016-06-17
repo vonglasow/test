@@ -5,7 +5,9 @@ Moreover, Hoa aims at being a bridge between industrial and research worlds.
 
 # Hoa\_\#LIBRARYNAME\# ![state](http://central.hoa-project.net/State/\#LIBRARYNAME\#)
 
+<!---
 Description of this library
+--->
 
 ## Installation
 
@@ -45,18 +47,20 @@ may also be helpful.
 
 ## Quick usage
 
+<!---
 Describe a quick usage in this section.
+--->
 
+<!---
+If applicable, add the Awecode section)
 ## Awecode
 
-The following awecodes show this library in action:
+The following awecodes show this library in action:)
 
-Add here the list of awecode about this library (see example below)
-```md
-  * [`Hoa\Websocket`](http://hoa-project.net/Awecode/Websocket.html):
-    *why and how to use `Hoa\Websocket\Server` and `Hoa\Websocket\Client`? A
-    simple example will illustrate the WebSocket protocol*.
-```
+* [`Hoa\Websocket`](http://hoa-project.net/Awecode/Websocket.html):
+  *why and how to use `Hoa\Websocket\Server` and `Hoa\Websocket\Client`? A
+  simple example will illustrate the WebSocket protocol*.
+--->
 
 ## Documentation
 
@@ -77,3 +81,4 @@ writing and submitting a patch etc.
 
 Hoa is under the New BSD License (BSD-3-Clause). Please, see
 [`LICENSE`](http://hoa-project.net/LICENSE).
+
