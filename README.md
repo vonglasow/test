@@ -3,7 +3,11 @@
 Hoa is a **modular**, **extensible** and **structured** set of PHP libraries.
 Moreover, Hoa aims at being a bridge between industrial and research worlds.
 
-# Hoa\_\#LIBRARYNAME\# ![state](http://central.hoa-project.net/State/\#LIBRARYNAME\#)
+<!---
+ensure you replace each occurence of {=LIBRARYNAME=}
+--->
+
+# Hoa\_{=LIBRARYNAME=} ![state](http://central.hoa-project.net/State/{=LIBRARYNAME=})
 
 <!---
 Description of this library
@@ -13,10 +17,10 @@ Description of this library
 
 With [Composer](http://getcomposer.org/), to include this library into your
 dependencies, you need to require
-[`hoa/\#LIBRARYNAME\#`](https://packagist.org/packages/hoa/\#LIBRARYNAME\#):
+[`hoa/{=LIBRARYNAME=}`](https://packagist.org/packages/hoa/{=LIBRARYNAME=}):
 
 ```
-composer require "hoa/\#LIBRARYNAME\#"
+composer require "hoa/{=LIBRARYNAME=}"
 ```
 
 Please, read the website to [get more informations about how to
@@ -64,8 +68,8 @@ The following awecodes show this library in action:)
 
 ## Documentation
 
-The documentation of this library is available in [the `Hoa\\\#LIBRARYNAME\#`
-hack book chapter](http://hoa-project.net/Literature/Hack/\#LIBRARYNAME\#.html).
+The documentation of this library is available in [the `Hoa\{=LIBRARYNAME=}`
+hack book chapter](http://hoa-project.net/Literature/Hack/{=LIBRARYNAME=}.html).
 
 Other documentations can be found on the website:
 [http://hoa-project.net/](http://hoa-project.net/).
